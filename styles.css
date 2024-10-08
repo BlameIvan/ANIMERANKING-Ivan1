@@ -4,37 +4,36 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: white;
-  background-color: #562ea2;
-  ;
+  font-family: 'Inter';font-size: 22px;
+  color: rgb(255, 255, 255);
+  background-color: #754242
 }
 
 nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 1rem;
   gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #2e51a2;
+  border-bottom: solid 1px #000000;
+  background-color:#4d6083;
 }
 
 nav a {
   display: inline-block;
   min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
+  padding: 0.7rem;
+  border-radius: .2rem;
+  border: solid 1.5px #aaa;
   text-align: center;
   text-decoration: none;
-  color: #fff4e7;
+  color: #808080;
+  background-color:#89AAE6
 }
 
 nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+  color: #808080;
+  background-color: #2e51a2 ;
 }
 
 main {
@@ -43,5 +42,40 @@ main {
 
 h1 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+
+}
+.AnimeDeaths {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center; 
+}
+
+#item1 {
+padding: .75rem;
+background-color: #7c4141;
+width:100%;
+}
+
+#item2 {
+  padding: .75rem;
+  background-color: #a14646;
+  width:100%;
+}
+#item3 {
+  padding: .75rem;
+  background-color: #964c4c;
+  width:100%;
+}
+
+
+.deathtext{
+
+  
 }
