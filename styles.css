@@ -16,7 +16,7 @@ nav {
   padding: 1rem;
   gap: 0.5rem;
   border-bottom: solid 1px #000000;
-  background-color:#475a3b;
+  background-color:#4d6083;
 }
 
 nav a {
@@ -28,7 +28,7 @@ nav a {
   text-align: center;
   text-decoration: none;
   color: #808080;
-  background-color:#89AAE6;
+  background-color:#89AAE6
 }
 
 nav a[aria-current='page'] {
@@ -47,7 +47,7 @@ h1 {
 
 p {
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1rem;
 
 }
 .AnimeDeaths {
@@ -58,24 +58,29 @@ p {
 }
 
 #item1 {
-  padding: 1rem;
+  padding: .75rem;
   background-color: #7c4141;
   width:100%;
+  border-radius:10px;
 }
 
 #item2 {
-  padding: 1rem;
+  padding: .75rem;
   background-color: #a14646;
   width:100%;
+  border-radius:10px;
 }
 #item3 {
-  padding: 1rem;
+  padding: .75rem;
   background-color: #964c4c;
   width:100%;
+  border-radius:10px;
 }
 
 
 .DeathText{
-  font-size: 80%;
-  color:rgb(0, 0, 0)
+  font-size:70%;
+  padding-bottom: .5rem;
 }
+
+#FlexImages
