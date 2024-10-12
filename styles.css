@@ -83,4 +83,12 @@ p {
   padding-bottom: .5rem;
 }
 
-#FlexImages
+.FlexImages {
+  display: flex;
+  align-items:center;  
+}
+
+#Images1 {
+  size:10px
+
+}
