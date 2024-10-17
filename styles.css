@@ -27,14 +27,16 @@ nav a {
   border: solid 1.5px #aaa;
   text-align: center;
   text-decoration: none;
-  color: #808080;
+  color:rgb(76, 0, 255);
   background-color:#89AAE6
 }
 
 nav a[aria-current='page'] {
-  color: #808080;
+  color: rgb(0, 0, 0);
   background-color: #2e51a2 ;
+  font-weight:bolder;
 }
+
 
 main {
   padding: 1rem;
