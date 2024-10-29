@@ -112,3 +112,17 @@ p {
 .container:hover .hover-content {
   display: block; 
 }
+.titlebox{
+  font-size:2rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-style: solid;
+  border-color:black;
+  border-radius:3px;
+  text-align:center;
+  padding:.5rem;
+  width:max-content;
+  height:max-content;
+
+}
