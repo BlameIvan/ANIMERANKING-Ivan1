@@ -53,20 +53,33 @@ p {
 
 .AnimeDeaths {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center; 
+  overflow-y:auto;
+
 }
 
 #item1, #item2, #item3 {
   padding: .75rem;
   width: 100%;
+  height:500px;
   border-radius: 10px;
+  overflow-x:auto;
 }
 
-#item1 { background-color: #7c4141; }
-#item2 { background-color: #a14646; }
-#item3 { background-color: #964c4c; }
+#item1 {
+   background-color: #7c4141; 
+   overflow-y:auto;
+  }
+#item2 { 
+  background-color: #a14646; 
+  overflow-y:auto;
+}
+#item3 {   
+  background-color: #964c4c; 
+  overflow-y:auto;
+}
 
 .DeathText {
   font-size: 70%;
