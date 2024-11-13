@@ -89,9 +89,6 @@
             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
       </div>
     </div>
-
-
-
     <div style="margin-top:10rem; font-size:30px; text-align:center; margin-bottom:2rem;"><b>Recent Releases</b></div>
     <div class="AnimeDeaths">
 
@@ -114,12 +111,13 @@
 
 
     </div>
-
+    <h1 id="doctext" style="color:#754242;font-size:0">Thanks for your reccomendation.</h1>
 
     <div>
 
       <form class="form"> 
         <label for="animename">Have a suggestion, drop it below! Just give me some information to work with!</label><br><br>
+        Email: <input type="email" name="email" id="email"><br><br>
         <input id="animename" name="email" type="email" placeholder="Series Name"> <br><br>
         <div>What medium?</div>
         <label for="animetype" style="color:#000000">Movie</label>
@@ -141,9 +139,17 @@
         <input id="checky" type="checkbox"><br>
         <label for="checky" style="color:black">Exciting</label>
         <input id="checky" type="checkbox"><br>
-        <input type="submit">
+        <input type="submit" onclick="formsubmission()">
       </form>
       <br>
+      <script>
+        function formsubmission() {
+          alert(document.getElementById("doctext").textContent);
+
+        }
+
+
+      </script>
     </div>
   </main>
 </body>
