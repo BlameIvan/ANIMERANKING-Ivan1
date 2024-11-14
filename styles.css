@@ -53,20 +53,35 @@ p {
 
 .AnimeDeaths {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center; 
+  margin-left:10rem;
+  margin-right:10rem;
 }
 
 #item1, #item2, #item3 {
   padding: .75rem;
-  width: 100%;
+  width: 40rem;
+  height:520px;
   border-radius: 10px;
 }
 
-#item1 { background-color: #7c4141; }
-#item2 { background-color: #a14646; }
-#item3 { background-color: #964c4c; }
+#item1 {
+   background-color: #7c4141; 
+   overflow-y:auto;
+   overflow-x:auto;
+  }
+#item2 { 
+  background-color: #a14646;
+  overflow-y:auto;
+  overflow-x:auto; 
+}
+#item3 {   
+  background-color: #964c4c; 
+  overflow-y:auto;
+  overflow-x:auto;
+}
 
 .DeathText {
   font-size: 70%;
@@ -74,8 +89,9 @@ p {
 }
 
 .FlexImages {
-  display: flex;
-  align-items: center;  
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .container {
@@ -112,3 +128,35 @@ p {
 .container:hover .hover-content {
   display: block; 
 }
+
+
+
+
+.textbox{
+  display:flex;
+  justify-content:center;
+  flex-direction:row;
+
+}
+
+
+
+#titlebox{
+  font-size:2rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-style: solid;
+  border-color:black;
+  border-radius:3px;
+  text-align:center;
+  padding:.5rem;
+  width:max-content;
+  height:max-content;
+
+}
+
+.form{
+  padding-top:2rem;
+}
+
