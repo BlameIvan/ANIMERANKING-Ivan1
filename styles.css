@@ -155,3 +155,16 @@ p {
   height:max-content;
 
 }
+
+.form{
+  padding-top:2rem;
+}
+ td{
+  padding:1rem
+
+
+ }
+thead{
+
+  color:black;
+}

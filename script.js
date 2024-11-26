@@ -19,4 +19,7 @@ else{
   body.style["backgroundColor"] = "white";
   body.style["color"] = "black";
 }  
-
+const = foodTypes[Hamburger, Snakes, Alligators, Greens]
+console.log(foodTypes.length)
+console.log(foodtypes[0])
+console.log(foodtypes[3])

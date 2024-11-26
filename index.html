@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <title>Anirank.net</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="icon" href="/Images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4cad557a5c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
@@ -19,9 +35,8 @@
       <a href="#" class="hover-button"><i class="fa-solid fa-bars"></i></a>
       <div class="hover-content">
         <p><a href="/" aria-current="page" style="color:black">Home</a></p>
-        <p>
-          <a href="/page2.html" style="color:black">Best Anime of All Time</a>
-        </p>
+        <p><a href="/page2.html" style="color:black">Best Anime of All Time</a></p>
+        <p><a href="/reviews.html" style="color:black">Reviews!</a></p>
       </div>
     </div>
   </nav>
@@ -32,7 +47,8 @@
         <div id="titlebox">The Greatest Anime of All Time!</div>
       </a>
     </div>
-    <div style="margin-top:2rem; font-size:30px; text-align:center; margin-bottom:2rem;"><b>Top 3 Saddest Anime Deaths</b></div>
+    <div style="margin-top:2rem; font-size:30px; text-align:center; margin-bottom:2rem;"><b>Top 3 Saddest Anime
+        Deaths</b></div>
     <div class="AnimeDeaths">
       <div id="item1" style="text-align:center">
         <div>Commander Erwin [Attack on Titan]</div>
@@ -88,24 +104,21 @@
             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
       </div>
     </div>
-
-
-
     <div style="margin-top:10rem; font-size:30px; text-align:center; margin-bottom:2rem;"><b>Recent Releases</b></div>
     <div class="AnimeDeaths">
 
       <div id="item1" style="text-align:center">
-        <img src="/Images/Homepage Images/Dandadan.jpg" width="300px" >
+        <img src="/Images/Homepage Images/Dandadan.jpg" width="300px">
         <div style="margin-top: 1rem;">Dandadan</div>
       </div>
 
       <div id="item2" style="text-align:center">
         <img src="/Images/Homepage Images/ReZero.jpg" width="300px">
         <div style="margin-top: 1rem;">Re:Zero Season 3</div>
-        
+
       </div>
       <div id="item3" style="text-align:center">
-        <img src="/Images/Homepage Images/uzumaki.jpg" width="300px" >
+        <img src="/Images/Homepage Images/uzumaki.jpg" width="300px">
         <div style="margin-top: 1rem;">Uzumaki</div>
       </div>
     </div>
@@ -113,7 +126,46 @@
 
 
     </div>
+    <h1 id="doctext" style="color:#754242;font-size:0">Thanks for your reccomendation.</h1>
+
+    <div>
+
+      <form class="form"> 
+        <label for="animename">Have a suggestion, drop it below! Just give me some information to work with!</label><br><br>
+        Email: <input type="email" name="email" id="email"><br><br>
+        <input id="animename" name="email" type="email" placeholder="Series Name"> <br><br>
+        <div>What medium?</div>
+        <label for="animetype" style="color:#000000">Movie</label>
+        <input id="animetype" type="radio"> <br>
+        <label for="animetype" style="color:black">Special</label>
+        <input id="animetype" type="radio"> <br>
+        <label for="animetype" style="color:black">TV Show</label>
+        <input id="animetype" type="radio"> <br>
+        <label for="animetype" style="color:black">Manga</label>
+        <input id="animetype" type="radio"> <br><br>
+        <div>Check all that apply.</div>
+        <label for="checky" style="color:black">Graphic Content</label>
+        <input id="checky" type="checkbox"><br>
+        <label for="checky" style="color:black">Wholesome</label>
+        <input id="checky" type="checkbox"><br>
+        <label for="checky" style="color:black">Psychological</label>
+        <input id="checky" type="checkbox"><br>
+        <label for="checky" style="color:black">Funny</label>
+        <input id="checky" type="checkbox"><br>
+        <label for="checky" style="color:black">Exciting</label>
+        <input id="checky" type="checkbox"><br>
+        <input type="submit" onclick="formSubmission()">
+      </form>
+      <br>
+      <script>
+        function formSubmission() {
+          alert(document.getElementById("doctext").textContent);
+
+        }
+
+
+      </script>
+    </div>
   </main>
 </body>
-
 </html>
