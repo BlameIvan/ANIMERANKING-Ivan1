@@ -35,9 +35,7 @@
       <a href="#" class="hover-button"><i class="fa-solid fa-bars"></i></a>
       <div class="hover-content">
         <p><a href="/" aria-current="page" style="color:black">Home</a></p>
-        <p>
-          <a href="/page2.html" style="color:black">Best Anime of All Time</a>
-        </p>
+        <p><a href="/reviews.html" style="color:black">Reviews!</a></p>
       </div>
     </div>
   </nav>
@@ -52,31 +50,62 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Neon Genesis Evangelion</td>
-                <td>9.5</td>
-                <td><a href="/page2.html" style="text-decoration:none; color:white;und">Review here!</a></td>
-            </tr>
-
-
-
         </tbody>
         
 
 
     </table>
     <div>
-        <select id="types"></select> 
+        <select id="Rating"></select> 
     </div>
     <script>
         const Rating =["Hamburger", "Snakes", "Alligators", "Greens"];
-        const select= document.getElementById("rating")
-        console.log(foodTypes.length)
-        console.log(foodTypes[0])
-        console.log(foodTypes[3])
-        foodTypes .forEach((num)=> {
-            console.log(num)}        
+        const select= document.getElementById("Rating");
+        Rating.forEach((num)=> 
+        {
+          option=document.createElement("option");
+          option.text=num;
+          option.value=num;
+          select.appendChild(option);   }
         )
+    </script>
+    <script>
+      const reviews=[{
+        Anime: "Neon Genesis Evangelion",
+        Genre: "Mecha",
+        Rating: "9.5",
+      }, {
+        Anime: "Attack on Titan",
+        Genre: "Seinen",
+        Rating: "10",
+      }, {
+        Anime: "Your Lie in April",
+        Genre: "Romance",
+        Rating: "8",
+      }
+      , {
+        Anime: "Bakemonogatari",
+        Genre: "Romance",
+        Rating: "7",
+      }];
+      const writeTableRow = (table,anime)=> {
+      const newRow= table.insertRow();
+
+
+      newRow.innerHTML = `<tr id=${reviews.Anime}>
+        <td>${reviews.Anime}</td>
+        <td>${reviews.Genre}</td>
+        <td>${reviews.Rating}</td>
+
+
+        
+        </tr>`;
+      
+      
+      }
+      const tableBody = document.getElementsByTagName("tbody")[0];
+      writeTableRow(tableBody, Anime[0])
+
     </script>
   </main>
 </body>
