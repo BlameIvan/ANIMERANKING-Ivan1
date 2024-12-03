@@ -45,7 +45,7 @@
         <thead>
             <tr class=>
                 <td>Anime</td>
-                <td>Rating</td>
+                <td>Genre</td>
                 <td>Review</td>
             </tr>
         </thead>
@@ -56,10 +56,10 @@
 
     </table>
     <div>
-        <select id="Rating"></select> 
+        <select id="Rating" onchange="makeTable()"></select> 
     </div>
     <script>
-        const Rating =["Hamburger", "Snakes", "Alligators", "Greens"];
+        const Rating =["All", "Seinen", "Romance", "Mecha"];
         const select= document.getElementById("Rating");
         Rating.forEach((num)=> 
         {
@@ -73,29 +73,30 @@
       const reviews=[{
         Anime: "Neon Genesis Evangelion",
         Genre: "Mecha",
-        Rating: "9.5",
+        Rating: 9.5,
+        Link:"./page2.html"
       }, {
         Anime: "Attack on Titan",
         Genre: "Seinen",
-        Rating: "10",
+        Rating: 10,
       }, {
         Anime: "Your Lie in April",
         Genre: "Romance",
-        Rating: "8",
+        Rating: 8,
       }
       , {
         Anime: "Bakemonogatari",
         Genre: "Romance",
-        Rating: "7",
+        Rating: 7
       }];
-      const writeTableRow = (table,anime)=> {
+      const writeTableRow = (table, anime)=> {
       const newRow= table.insertRow();
 
 
-      newRow.innerHTML = `<tr id=${reviews.Anime}>
-        <td>${reviews.Anime}</td>
-        <td>${reviews.Genre}</td>
-        <td>${reviews.Rating}</td>
+      newRow.innerHTML = `<tr id=${anime.Anime}>
+        <td>${anime.Anime}</td>
+        <td>${anime.Genre}</td>
+        <td><a href="${anime.Link}">${anime.Rating}</a></td>
 
 
         
@@ -103,8 +104,30 @@
       
       
       }
-      const tableBody = document.getElementsByTagName("tbody")[0];
-      writeTableRow(tableBody, Anime[0])
+
+      const makeTable= ()=>{
+
+        const tableBody = document.getElementsByTagName("tbody")[0];
+        tableBody.innerHTML="";
+        if (select.value == "All"){
+        reviews.forEach( (row) => {
+          writeTableRow(tableBody, row);
+        
+
+      }) 
+      }
+      else{
+        const filtered= reviews.filter((r)=r.Genre == select.value)
+        filtered.forEach((r) =>)
+        console.log(filtered)
+      }
+
+    }
+      makeTable()
+
+
+      
+
 
     </script>
   </main>
