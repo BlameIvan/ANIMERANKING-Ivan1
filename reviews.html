@@ -117,8 +117,10 @@
       }) 
       }
       else{
-        const filtered= reviews.filter((r)=r.Genre == select.value)
-        filtered.forEach((r) =>)
+        const filtered= reviews.filter((r)=>r.Genre == select.value)
+        filtered.forEach((r) =>
+        writeTableRow(tableBody, r)
+        )
         console.log(filtered)
       }
 
