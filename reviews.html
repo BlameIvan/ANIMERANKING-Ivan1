@@ -59,7 +59,7 @@
         <select id="Rating" onchange="makeTable()"></select> 
     </div>
     <script>
-        const Rating =["All", "Seinen", "Romance", "Mecha"];
+        const Rating =["All", "Seinen", "Romance", "Mecha", "Shonen"];
         const select= document.getElementById("Rating");
         Rating.forEach((num)=> 
         {
@@ -73,18 +73,27 @@
       const reviews=[{
         Anime: "Neon Genesis Evangelion",
         Genre: "Mecha",
-        Rating: 9.5,
+        Rating: 10,
         Link:"./page2.html"
-      }, {
+      },{
         Anime: "Attack on Titan",
         Genre: "Seinen",
         Rating: 10,
-      }, {
+      },{
         Anime: "Your Lie in April",
         Genre: "Romance",
         Rating: 8,
-      }
-      , {
+      },{        
+        Anime: "Dandadan",
+        Genre: "Shonen",
+        Rating: 8,
+        Link:"./ReviewSites/Dandadan.html"
+      },{
+        Anime: "Re:Zero",
+        Genre: "Seinen",
+        Rating: 9,
+        Link:"./ReviewSites/Re:Zero.html"
+      },{
         Anime: "Bakemonogatari",
         Genre: "Romance",
         Rating: 7
