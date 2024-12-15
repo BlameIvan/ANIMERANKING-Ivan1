@@ -60,27 +60,33 @@ p {
   margin-right:10rem;
 }
 
-#item1, #item2, #item3 {
+#SadDeath1, #SadDeath2, #SadDeath3 {
   padding: .75rem;
   width: 40rem;
-  height:520px;
+  height:542px;
   border-radius: 10px;
 }
 
-#item1 {
+#SadDeath1 {
    background-color: #7c4141; 
    overflow-y:auto;
    overflow-x:auto;
+   text-align:center;
+   font-size:1.5rem
   }
-#item2 { 
+#SadDeath2 { 
   background-color: #a14646;
   overflow-y:auto;
   overflow-x:auto; 
+  text-align:center;
+  font-size:1.5rem
 }
-#item3 {   
+#SadDeath3 {   
   background-color: #964c4c; 
   overflow-y:auto;
   overflow-x:auto;
+  text-align:center;
+  font-size:1.5rem
 }
 
 .DeathText {
@@ -167,4 +173,20 @@ p {
 thead{
 
   color:black;
+}
+
+.ReviewHeader{
+  text-align:center;
+}
+.ReviewText{
+  font-size:1.5rem  
+}
+.RecentReleases{
+  margin-top:1rem;
+  font-weight: bold;
+
+}
+.ReviewTable{
+ margin-left:auto; 
+ margin-right:auto;
 }

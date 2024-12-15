@@ -5,9 +5,9 @@
       href="https://fonts.googleapis.com/css?family=Inter"
       rel="stylesheet"
     />
-    <title>Anirank.net</title>
+    <title>Review Table</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="descripton" content="Where every anime review I have done so far is kept." />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
     <link rel="icon" href="/Images/favicon.ico" />
@@ -41,16 +41,19 @@
   </nav>
 
   <main>
-    <table id="table">
+    <div style="text-align:center; font-size:40px;"><b>Objective Character Rankings</b></div>
+    <div >
+      <table class="ReviewTable">
         <thead>
-            <tr class=>
+            <tr>
                 <td>Anime</td>
-                <td>Genre</td>
-                <td>Review</td>
+                <td>|Genre</td>
+                <td>|Review</td>
             </tr>
         </thead>
         <tbody>
         </tbody>
+      </div>
         
 
 
@@ -59,7 +62,7 @@
         <select id="Rating" onchange="makeTable()"></select> 
     </div>
     <script>
-        const Rating =["All", "Seinen", "Romance", "Mecha", "Shonen"];
+        const Rating =["All", "Seinen", "Romance", "Mecha", "Shonen", "Horror"];
         const select= document.getElementById("Rating");
         Rating.forEach((num)=> 
         {
@@ -96,8 +99,14 @@
       },{
         Anime: "Bakemonogatari",
         Genre: "Romance",
-        Rating: 7
-      }];
+        Rating: 7,
+      },{
+        Anime: "Uzumaki",
+        Genre: "Horror",
+        Rating: 5,
+        Link:"./ReviewSites/Uzumaki.html"
+      }
+    ];
       const writeTableRow = (table, anime)=> {
       const newRow= table.insertRow();
 
