@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <title>Character Studies</title>
+    <meta charset="UTF-8" />
+    <meta name="descripton" content="Where every character study I have done so far is kept." />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="icon" href="/Images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4cad557a5c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-    <title> List of all anime ranked with links to other pages</title>
-</head>
+
 <body>
-    
-</body>
+  <nav>
+    <div>Anirank</a></div>
+    <div class="container">
+      <a href="#" class="hover-button"><i class="fa-solid fa-bars"></i></a>
+      <div class="hover-content">
+        <p><a href="/" aria-current="page" class="Hoverbutton">Home</a></p>
+        <p><a href="/reviews.html" class="Hoverbutton">Reviews!</a></p>  
+        <p><a href="/characterstudy.html" class="Hoverbutton">Character Studies!</a></p>
+        <p><a href="/aboutme.html" class="Hoverbutton">About Me</a></p>
+      </div>
+    </div>
+  </nav>
 
+  <main>
+    <div style="text-align:center; font-size:40px;"><b>Insanely In-Depth Character Studies</b></div>
+    <div class="FlexImages" style="padding-bottom:1.5rem">
+        <img src="./Images/Homepage Images/Lain.jpg" width="700px" style="border-style:ridge;border-color:brown">
+        <div style="padding-top:.8rem;">Lain character study coming soon!</div>
+
+    </div>
+    <div >
+      <table class="ReviewTable">
+        <thead>
+            <tr>
+                <td>Character</td>
+                <td>|Type/Review</td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </div>
+        
+
+
+    </table>
+    <div>
+        <select id="Type" onchange="makeTable()"></select> 
+    </div>
+    <script>
+        const Type =["All","Anti-hero", "Villain"];
+        const select= document.getElementById("Type");
+        Type.forEach((num)=> 
+        {
+          option=document.createElement("option");
+          option.text=num;
+          option.value=num;
+          select.appendChild(option);   }
+        )
+    </script>
+
+
+    <script>
+      const reviews=[{
+        Anime: "Guts",
+        Type: "Anti-hero",
+        Link:"./Character study/Guts.html",
+      },{
+        Anime: "Nagato",
+        Type: "Villain",
+        Link:"./Character study/Nagato.html",
+      }
+    ];
+      const writeTableRow = (table, anime)=> {
+      const newRow= table.insertRow();
+
+
+      newRow.innerHTML = `<tr id=${anime.Anime}>
+        <td>${anime.Anime}</td>
+        <td><a href="${anime.Link}">${anime.Type}</a></td>
+
+
+        
+        </tr>`;
+      
+      
+      }
+
+      const makeTable= ()=>{
+
+        const tableBody = document.getElementsByTagName("tbody")[0];
+        tableBody.innerHTML="";
+        if (select.value == "All"){
+        reviews.forEach( (row) => {
+          writeTableRow(tableBody, row);
+        
+
+      }) 
+      }
+      else{
+        const filtered= reviews.filter((r)=>r.Type == select.value)
+        filtered.forEach((r) =>
+        writeTableRow(tableBody, r)
+        )
+        console.log(filtered)
+      }
+
+    }
+      makeTable()
+
+
+      
+
+
+    </script>
+  </main>
+</body>
 </html>

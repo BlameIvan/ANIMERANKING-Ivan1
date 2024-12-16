@@ -98,6 +98,7 @@ p {
   display:flex;
   justify-content:center;
   align-items:center;
+  flex-direction:column;
 }
 
 .container {
@@ -190,3 +191,9 @@ thead{
  margin-left:auto; 
  margin-right:auto;
 }
+.Hoverbutton{
+  color:black;
+
+}
+
+.stars{margin-top:1rem;}
