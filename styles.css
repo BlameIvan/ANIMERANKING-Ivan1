@@ -196,4 +196,48 @@ thead{
 
 }
 
-.stars{margin-top:1rem;}
+.stars{
+  margin-top:1rem;
+}
+/* Hi miss this is the darkmode, but instead I did 
+it with colors that contrast better so its more like light mode lol */
+
+body.light-mode {
+  color: #333333;
+  background-color: #f4f4f4;
+}
+
+body.light-mode nav {
+  background-color: #ffffff;
+}
+
+body.light-mode nav a {
+  color: #333333;
+  background-color: #007bff;
+}
+
+body.light-mode nav a[aria-current='page'] {
+  background-color: #0056b3;
+}
+
+body.light-mode #SadDeath1 {
+  background-color: #f7d7d7;
+}
+
+body.light-mode #SadDeath2 {
+  background-color: #f0c5c5;
+}
+
+body.light-mode #SadDeath3 {
+  background-color: #e8b3b3;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
